@@ -15,6 +15,25 @@ public class StringUtil {
 
 
     /**
+     * 双指针判断回文字符串
+     * @param string 字符串
+     * @return 是否为回文字符串
+     */
+    public static boolean palindrome(String string){
+        int left = 0;
+        int right = string.length()-1;
+        while (left<right){
+            if (string.charAt(left)!=string.charAt(right)) return false;
+            left++;
+            right--;
+        }
+        return true;
+    }
+
+
+
+
+    /**
      * 滑动窗口解决子串问题(不保证顺序)
      * @param a 字符串
      * @param target 目标串

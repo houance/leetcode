@@ -149,9 +149,9 @@ public class TreeUtils {
 
     static class TreeNode{
 
-        private int value;
-        private TreeNode left;
-        private TreeNode right;
+        int value;
+        TreeNode left;
+        TreeNode right;
 
 
         public TreeNode() {
